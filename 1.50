@@ -1,0 +1,82 @@
+Using version ^2.0.2 for mujoco-py
+Using version ^2.9.0 for imageio
+
+Updating dependencies
+Resolving dependencies...
+
+Writing lock file
+
+Package operations: 8 installs, 0 updates, 0 removals
+
+  • Installing pycparser (2.20)
+  • Installing cffi (1.14.5)
+  • Installing cython (0.29.23)
+  • Installing fasteners (0.16)
+  • Installing glfw (2.1.0)
+  • Installing imageio (2.9.0)
+  • Installing box2d-py (2.3.8)
+  • Installing mujoco-py (2.0.2.13)
+
+  EnvCommandError
+
+  Command C:\Apps\dev\deep-reinforcement-learning\.venv\Scripts\pip.exe install --no-deps C:\Users\Jordi.Dekker\AppData\Local\pypoetry\Cache\artifacts\e7\ab\20\b60a110aaf7a2483fa8c0db20c0dfe9643ae88a4b06c044bf993538f3a\box2d-py-2.3.8.tar.gz errored with the following return code 1, and output: 
+  Processing c:\users\jordi.dekker\appdata\local\pypoetry\cache\artifacts\e7\ab\20\b60a110aaf7a2483fa8c0db20c0dfe9643ae88a4b06c044bf993538f3a\box2d-py-2.3.8.tar.gz
+  Building wheels for collected packages: box2d-py
+    Building wheel for box2d-py (setup.py): started
+    Building wheel for box2d-py (setup.py): finished with status 'error'
+    ERROR: Command errored out with exit status 1:
+     command: 'C:\Apps\dev\deep-reinforcement-learning\.venv\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"'; __file__='"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d 'C:\Users\JORDI~1.DEK\AppData\Local\Temp\pip-wheel-7ey98c1b'
+         cwd: C:\Users\JORDI~1.DEK\AppData\Local\Temp\pip-req-build-sirbm8yz\
+    Complete output (16 lines):
+    Using setuptools (version 54.2.0).
+    running bdist_wheel
+    running build
+    running build_py
+    creating build
+    creating build\lib.win-amd64-3.7
+    creating build\lib.win-amd64-3.7\Box2D
+    copying library\Box2D\Box2D.py -> build\lib.win-amd64-3.7\Box2D
+    copying library\Box2D\__init__.py -> build\lib.win-amd64-3.7\Box2D
+    creating build\lib.win-amd64-3.7\Box2D\b2
+    copying library\Box2D\b2\__init__.py -> build\lib.win-amd64-3.7\Box2D\b2
+    running build_ext
+    building 'Box2D._Box2D' extension
+    swigging Box2D\Box2D.i to Box2D\Box2D_wrap.cpp
+    swig.exe -python -c++ -IBox2D -small -O -includeall -ignoremissing -w201 -globals b2Globals -outdir library\Box2D -keyword -w511 -D_SWIG_KWARGS -o Box2D\Box2D_wrap.cpp Box2D\Box2D.i
+    error: command 'swig.exe' failed: No such file or directory
+    ----------------------------------------
+    ERROR: Failed building wheel for box2d-py
+    Running setup.py clean for box2d-py
+  Failed to build box2d-py
+  Installing collected packages: box2d-py
+      Running setup.py install for box2d-py: started
+      Running setup.py install for box2d-py: finished with status 'error'
+      ERROR: Command errored out with exit status 1:
+       command: 'C:\Apps\dev\deep-reinforcement-learning\.venv\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"'; __file__='"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\JORDI~1.DEK\AppData\Local\Temp\pip-record-mjask9fy\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Apps\dev\deep-reinforcement-learning\.venv\include\site\python3.7\box2d-py'
+           cwd: C:\Users\JORDI~1.DEK\AppData\Local\Temp\pip-req-build-sirbm8yz\
+      Complete output (16 lines):
+      Using setuptools (version 54.2.0).
+      running install
+      running build
+      running build_py
+      creating build
+      creating build\lib.win-amd64-3.7
+      creating build\lib.win-amd64-3.7\Box2D
+      copying library\Box2D\Box2D.py -> build\lib.win-amd64-3.7\Box2D
+      copying library\Box2D\__init__.py -> build\lib.win-amd64-3.7\Box2D
+      creating build\lib.win-amd64-3.7\Box2D\b2
+      copying library\Box2D\b2\__init__.py -> build\lib.win-amd64-3.7\Box2D\b2
+      running build_ext
+      building 'Box2D._Box2D' extension
+      swigging Box2D\Box2D.i to Box2D\Box2D_wrap.cpp
+      swig.exe -python -c++ -IBox2D -small -O -includeall -ignoremissing -w201 -globals b2Globals -outdir library\Box2D -keyword -w511 -D_SWIG_KWARGS -o Box2D\Box2D_wrap.cpp Box2D\Box2D.i
+      error: command 'swig.exe' failed: No such file or directory
+      ----------------------------------------
+  ERROR: Command errored out with exit status 1: 'C:\Apps\dev\deep-reinforcement-learning\.venv\Scripts\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"'; __file__='"'"'C:\\Users\\JORDI~1.DEK\\AppData\\Local\\Temp\\pip-req-build-sirbm8yz\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\JORDI~1.DEK\AppData\Local\Temp\pip-record-mjask9fy\install-record.txt' --single-version-externally-managed --compile --install-headers 'C:\Apps\dev\deep-reinforcement-learning\.venv\include\site\python3.7\box2d-py' Check the logs for full command output.
+  WARNING: You are using pip version 21.0.1; however, version 21.1 is available.
+  You should consider upgrading via the 'C:\Apps\dev\deep-reinforcement-learning\.venv\Scripts\python.exe -m pip install --upgrade pip' command.
+  
+
+  at ~\.poetry\lib\poetry\utils\env.py:1074 in _run
+  • Installing mujoco-py (2.0.2.13): Cancelled
+Terminate batch job (Y/N)? 
