@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/home/jordi/dev/deep-reinforcement-learning/.venv/bin/python3.6",
+    "-m",
+    "ipykernel_launcher",
+    "-f",
+    "{connection_file}"
+  ],
+  "display_name": "deep-reinforcement-learning-linux",
+  "language": "python"
+}
